@@ -1,22 +1,70 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-  <title>PsyKzz - Github.io</title>
+  <meta charset="utf-8">
+  <link href="images/favicon.png" rel="icon">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+  <link href="css/style.css" rel="stylesheet">
+  <title>PsyKzz</title>
 </head>
 <body>
-  <h1>PsyKzz - Matt Smith</h1>
-  <p>Github pages blog. Getting started</p>
-  
-  <div id='social-section'>
-    <h3>Social Networks</h3>
-    <ul>
-      <li><a href="//github.com/psykzz">github</a></li>
-      <li><a href="//fb.me/psykzz">facebook</a></li>
-    </ul>
-  </div>
-  
+  <div id='tglsrs'>toggle serious-ness</div>
+
+  <div class='container serious'>
+    <h1>Matt Smith</h1>
+
+    <hr />
+
+    <div>
+      <img src="https://s.gravatar.com/avatar/82ef898d34199d47d597cdde04029dd8?s=400&r=r" />
+    </div>
+
+    <div id='social-section'>
+
+      <h3>Social Networks</h3>
+      <ul>
+        <li><a href="//github.com/psykzz">github</a></li>
+        <li><a href="//linkedin.com/in/psykzz">linked in</a></li>
+      </ul>
+    </div>
+
     <div id='contact-section'>
-    <h3>Contact me</h3>
+      <h3>Contact me</h3>
       <p>Email: matt.daemon660 [at] gmail.com</p>
+    </div>
   </div>
+  <div class='container not-so-serious hidden'>
+    <h1>PsyKzz</h1>
+
+    <hr />
+
+    <div>
+      <img src="https://s.gravatar.com/avatar/d960efea0acdeefdfde2df97d923c879?s=400&r=r" />
+    </div>
+
+    <div id='social-section'>
+      <h3>Social Networks</h3>
+      <ul>
+        <li><a href="//github.com/psykzz">github</a></li>
+        <li><a href="//twitch.tv/psykzz">twitch</a></li>
+      </ul>
+    </div>
+
+    <div id='contact-section'>
+      <h3>Contact me</h3>
+      <p>Email: matt.daemon660 [at] gmail.com</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var srsSection = document.querySelector('.serious')
+    var notSoSrsSection = document.querySelector('.not-so-serious')
+    var toggleSrs = document.querySelector('#tglsrs')
+    toggleSrs.addEventListener('click', function(e) {
+      srsSection.classList.toggle('hidden')
+      notSoSrsSection.classList.toggle('hidden')
+    });
+  </script>
 </body>
 </html>
