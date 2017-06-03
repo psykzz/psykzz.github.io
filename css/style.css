@@ -9,18 +9,37 @@ body {
     font-family: 'Open Sans', serif;
     width: 100%
 }
+
+.img {
+    height: 100%
+    display: block;
+    margin: 0 auto;
+}
+
 .container {
     width: 1024px;
     margin: 0 auto;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.smaller {
+  height: 150px;
 }
 
 .hidden {
     display: none;
 }
-img {
-    display: block;
-    margin: 0 auto;
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
 }
 
 #tglsrs {
@@ -28,7 +47,7 @@ img {
     font-weight: 600;
 }
 
-section {
+section, article {
     min-height: 300px;
 }
 div {
