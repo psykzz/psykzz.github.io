@@ -4,4 +4,4 @@ set -e # halt script on error
 bundle exec jekyll build
 bundle exec htmlproofer ./_site
   --assume-extension \
-  --url-ignore "/www.linkedin.com/*/"
+  --url-ignore "/*.linkedin.com/*/"
