@@ -1,1 +1,8 @@
+# Site settings
+title: Blogging PsyKzz
+author: Matt Smith <PsyKzz>
+description: "Does things, does stuff."
+
+# Other settings
+permalink: pretty
 exclude: [vendor, build, Gemfile, CNAME]

@@ -1,0 +1,35 @@
+---
+---
+{% assign is_post = post.id %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  {% if page.title %} {{ page.title }}
+  {% else %} {{ site.title }}
+  {% endif %}
+  <link href="images/favicon.png" rel="icon">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id='tglsrs'>toggle serious-ness</div>
+
+  <div class='container serious'>
+    {% include srs.html %}
+  </div>
+  <div class='container not-so-serious hidden'>
+    {% include not-srs.html %}
+  </div>
+
+  <script type="text/javascript">
+    var srsSection = document.querySelector('.serious')
+    var notSoSrsSection = document.querySelector('.not-so-serious')
+    var toggleSrs = document.querySelector('#tglsrs')
+    toggleSrs.addEventListener('click', function(e) {
+      srsSection.classList.toggle('hidden')
+      notSoSrsSection.classList.toggle('hidden')
+    });
+  </script>
+</body>
+</html>
