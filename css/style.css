@@ -46,6 +46,10 @@ div img {
   float: left;
 }
 
+#page-content {
+  min-height: 300px;
+}
+
 #tglsrs {
     font-size: 0.7em;
     font-weight: 600;
