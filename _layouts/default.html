@@ -8,13 +8,15 @@
   {% if page.title %} {{ page.title }}
   {% else %} {{ site.title }}
   {% endif %}
-  <link href="images/favicon.png" rel="icon">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="{{ site.url }}/images/favicon.png" rel="icon">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{{ site.url }}/css/style.css" rel="stylesheet">
 </head>
 <body>
   <div id='tglsrs'>toggle serious-ness</div>
-
   <div class='container serious'>
     {% include srs.html %}
   </div>
