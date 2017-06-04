@@ -12,6 +12,10 @@ defaults:
     values:
       is_post: true # automatically set is_post=true for all posts
 
+# Add sitemap
+gems:
+  - jekyll-sitemap
+
 # Other settings
 permalink: pretty
 exclude: [vendor, build, Gemfile, CNAME]
