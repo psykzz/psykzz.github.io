@@ -13,9 +13,13 @@
 </div>
 {% endif %}
 
+{% if page.is_post %}
 <div id='page-content'>
   {{content}}
 </div>
+
+<hr />
+{% endif %}
 
 <div class='row'>
   <div class='col-6' id='social-section'>
