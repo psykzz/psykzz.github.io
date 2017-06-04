@@ -15,6 +15,7 @@ defaults:
 # Add sitemap
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Other settings
 permalink: pretty
