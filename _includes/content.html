@@ -2,16 +2,10 @@
 
 <hr />
 
-{% if page.is_post %}
-<div class="smaller float-right">
-  <div><a href="/">« Go Back</a></div>
+<div class="{% if page.is_post %}smaller float-right{% endif %}">
+  {% if page.is_post %}<div><a href="/">« Go Back</a></div>{% endif %}
   <img alt="Profile picture" src="https://s.gravatar.com/avatar/82ef898d34199d47d597cdde04029dd8?s=400&r=r" />
 </div>
-{% else %}
-<div>
-  <img alt="Profile picture" src="https://s.gravatar.com/avatar/82ef898d34199d47d597cdde04029dd8?s=400&r=r" />
-</div>
-{% endif %}
 
 {% if page.is_post %}
 <div id='page-content'>
