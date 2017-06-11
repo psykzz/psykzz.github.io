@@ -2,6 +2,7 @@
 layout: default
 title:  "My First post!"
 categories: personal
+voting_enabled: true
 ---
 
 # Welcome
