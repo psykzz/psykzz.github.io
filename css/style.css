@@ -38,6 +38,11 @@ ul {
     margin-left: 25px;
 }
 
+.unstyled {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 .container {
     width: 1024px;
     margin: 0 auto;
