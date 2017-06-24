@@ -1,4 +1,8 @@
 
+* {
+	box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -32,10 +36,6 @@ section, article {
 
 div {
     margin: 15px;
-}
-
-ul {
-    margin-left: 25px;
 }
 
 .unstyled {
