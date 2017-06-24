@@ -16,7 +16,7 @@ For example, I recently took some pictures of my kitten "Saskia", by doing a sim
 
 I can quickly see pictures from my account.
 
-![Google Photos showing pictures of a kitten]({{ site.url }}/img/google-photos-saskia.png).
+![Google Photos showing pictures of a kitten](/img/google-photos-saskia.png).
 
 This lead me to think about one of the next types of services that google photos might decide to offer.
 
