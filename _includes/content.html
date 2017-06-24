@@ -16,6 +16,17 @@
 {% endif %}
 
 <div class='row'>
+  <div class='col-3' id='recent-posts'>
+    <h3>Recent blog posts</h3>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
   <div class='col-3' id='social-section'>
     <h3>Social Networks</h3>
     <ul>
@@ -29,15 +40,4 @@
     <h3>Contact me</h3>
     <p>Email: matt.daemon660 [at] gmail.com</p>
   </div>
-</div>
-
-<div class='col-3' id='recent-posts'>
-  <h3>Recent blog posts</h3>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
 </div>
